@@ -1,0 +1,129 @@
+// Colors
+$white: #ffffff;
+$grey: #f5f5f5;
+$maroon: #ee405e;
+$black: #000000;
+$primary: #587be0;
+$primaryLight: #b2b2b2;
+$success: #31c451;
+$danger: #ff333a;
+$warning: #f5c84c;
+$lightGrey: #e5e5e5;
+$pink: #e1193b;
+$input_field_grey: #e8e8e8;
+$place_holder: #828282;
+$purple: #885fff;
+$dark: #414047;
+$input_border_inactive: #bebec2;
+$input_bg: #fcfcfc;
+$input_label: #6f6e73;
+$contract_title: #414047;
+$category_title: #0b0b0cb2;
+$seed_phrase_title: #0f2035;
+// font family
+@font-face {
+  font-family: Manrope-Bold;
+  src: url('../Fonts/Manrope-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: Manrope-ExtraBold;
+  src: url('../Fonts/Manrope-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: Manrope-SemiBold;
+  src: url('../Fonts/Manrope-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: Manrope;
+  src: url('../Fonts/Manrope-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: Manrope-Light;
+  src: url('../Fonts/Manrope-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: Manrope-ExtraLight;
+  src: url('../Fonts/Manrope-ExtraLight.ttf') format('truetype');
+}
+@font-face {
+  font-family: Manrope-Medium;
+  src: url('../Fonts/Manrope-Medium.ttf') format('truetype');
+}
+
+// Universal styling
+body {
+  font-family: Inter-Regular;
+  color: black;
+  background-color: $white !important;
+  margin: 0rem !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  color: $primary;
+  text-decoration: none;
+  transition: 0.35s;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+::-webkit-scrollbar {
+  width: 0.4rem;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  /* border-radius: 10px; */
+  // max-height: 30%;
+  // height: 30%;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $maroon;
+}
+
+@mixin media($breakpoint) {
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 1025px) {
+      @content;
+    }
+  }
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 800px) {
+      @content;
+    }
+  }
+  @if $breakpoint == land {
+    @media only screen and (max-width: 1450px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media only screen and (max-width: 1799px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop-large {
+    @media only screen and (min-width: 1800px) {
+      @content;
+    }
+  }
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  width: 22px !important;
+  height: 22px !important;
+}

@@ -1,0 +1,57 @@
+// @import './globals.scss';
+.main_container {
+  max-width: 100%;
+  display: flex;
+  .left_col {
+    img {
+      border-radius: 10px;
+    }
+    width: 30%;
+  }
+  .right_col {
+    h2 {
+      font-size: 16px;
+      font-family: Manrope-Bold;
+      font-weight: 600;
+      margin: 0rem;
+      color: #414047;
+    }
+    .div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .desc {
+        p {
+          margin: 0.2rem 0rem;
+          color: #6f6e73;
+          font-family: Manrope;
+          font-size: 12px;
+        }
+      }
+      .icon {
+        display: flex;
+        align-items: center;
+        button {
+          border: none;
+          background-color: transparent;
+          cursor: pointer;
+          .arrow_svg {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            path {
+              fill: #33373bb2;
+            }
+          }
+        }
+      }
+    }
+    a {
+      color: #587be0;
+      font-family: Manrope;
+      font-size: 12px;
+    }
+    width: 70%;
+  }
+}

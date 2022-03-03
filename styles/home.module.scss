@@ -1,0 +1,131 @@
+// @import './globals.scss';
+@font-face {
+  font-family: Manrope-Medium;
+  src: url('../Fonts/Manrope-Medium.ttf') format('truetype');
+}
+.main_container {
+  .search {
+    display: flex;
+    margin-top: 1rem;
+    padding: 0.4rem 1.2rem;
+    align-items: center;
+
+    .div_one {
+      background-color: rgb(245, 244, 244);
+      border-radius: 10px;
+      img {
+        padding-left: 0.8rem;
+        margin-right: 0.5rem;
+        position: relative;
+        transform: translateY(5px);
+      }
+      input {
+        border: none;
+        background-color: rgb(245, 244, 244);
+        height: 40px;
+        width: 15rem;
+        border-radius: 10px;
+      }
+      :focus {
+        outline: none;
+      }
+      ::placeholder {
+        color: #828282;
+        font-size: 16px;
+        font-family: Manrope-Light;
+      }
+    }
+    .div_two {
+      display: flex;
+      margin-left: auto;
+      button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        img {
+          margin-right: 0.6rem;
+        }
+      }
+    }
+  }
+  .experiences {
+    padding: 0.5rem 1.2rem;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.2rem;
+      align-items: baseline;
+      .heading {
+        h2 {
+          font-size: 20px;
+          font-family: Manrope-SemiBold;
+          margin: 0rem;
+        }
+      }
+      .seeAll {
+        button {
+          border: none;
+          background-color: transparent;
+          color: #885fff;
+          font-size: 16px;
+          font-family: Manrope-SemiBold;
+          display: flex;
+          align-items: center;
+          svg {
+            margin-left: 0.5rem;
+            path {
+              fill: #885fff;
+            }
+          }
+        }
+      }
+    }
+    h2 {
+      font-size: 22px;
+      font-family: Manrope-SemiBold;
+    }
+    .contract {
+      margin-bottom: 0.5rem;
+    }
+  }
+  .categories {
+    padding: 0.5rem 1.2rem;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.4rem;
+      align-items: baseline;
+      .heading {
+        h2 {
+          font-size: 22px;
+          font-family: Manrope-SemiBold;
+          margin: 0rem;
+        }
+      }
+      .seeAll {
+        button {
+          border: none;
+          background-color: transparent;
+          color: #885fff;
+          font-size: 16px;
+          font-family: Manrope-SemiBold;
+          display: flex;
+          align-items: center;
+          svg {
+            margin-left: 0.5rem;
+            path {
+              fill: #885fff;
+            }
+          }
+        }
+      }
+    }
+    .row {
+      justify-content: center;
+      .category {
+        padding: 0.4rem;
+        width: 50%;
+      }
+    }
+  }
+}

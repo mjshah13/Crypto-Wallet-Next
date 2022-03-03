@@ -1,0 +1,67 @@
+.details {
+  h2 {
+    font-size: 18px;
+    font-family: Manrope-SemiBold;
+  }
+  p {
+    font-size: 16px;
+    font-family: Manrope-Medium;
+  }
+  .link {
+    display: flex;
+    a {
+      margin-left: 0.4rem;
+      font-size: 16px;
+      font-family: Manrope-Medium;
+    }
+  }
+}
+.activities {
+  overflow-y: scroll;
+  height: 40vh;
+  .activity {
+    width: 8rem;
+    background-color: #f5f5f5;
+    padding: 0.4rem 0.8rem;
+    border-radius: 50px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: 0.6rem;
+    p {
+      margin: 0rem;
+      font-family: Manrope-Medium;
+      font-size: 14px;
+      color: #6f6e73;
+      text-align: center;
+    }
+  }
+  .list {
+    display: flex;
+    margin: 1.5rem 0rem;
+
+    .left {
+      img {
+        width: 2.8rem;
+      }
+    }
+    .right {
+      margin-left: 0.5rem;
+      h3 {
+        margin: 0rem;
+        font-family: Manrope-SemiBold;
+
+        font-size: 16px;
+        span {
+          color: #885fff;
+        }
+      }
+      p {
+        margin: 0rem;
+        color: #6f6e73;
+        font-size: 14px;
+        font-family: Manrope;
+      }
+    }
+  }
+}

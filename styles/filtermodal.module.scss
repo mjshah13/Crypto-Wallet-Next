@@ -1,0 +1,39 @@
+.container {
+  h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-family: Manrope-Bold;
+    color: black;
+    .count {
+      height: 1.8rem;
+      width: 1.8rem;
+      border-radius: 50%;
+      background-color: #885fff;
+      display: flex;
+      margin-right: auto;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-left: 0.4rem;
+      color: white;
+    }
+    button {
+      background-color: transparent;
+      border: none;
+    }
+  }
+  .checklist {
+    display: flex;
+    img {
+      width: 2rem;
+      margin-right: 0.6rem;
+    }
+    p {
+      font-size: 16px;
+      font-family: Manrope-SemiBold;
+      color: black;
+    }
+  }
+}

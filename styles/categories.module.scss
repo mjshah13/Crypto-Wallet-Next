@@ -1,0 +1,50 @@
+.main_container {
+  padding: 0.8rem;
+  border-radius: 10px;
+  .icon_container {
+    padding: 0.4rem;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    img {
+      display: flex;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: -2px;
+      right: 0px;
+    }
+  }
+  .title_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem;
+    h3 {
+      color: #33373bb2;
+      font-size: 15px;
+      font-weight: 600;
+      font-family: Manrope;
+      margin: 0.8rem 0rem;
+    }
+    button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+
+      .arrow_svg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        path {
+          fill: #33373bb2;
+        }
+      }
+    }
+  }
+}

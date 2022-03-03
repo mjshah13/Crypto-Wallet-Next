@@ -1,0 +1,55 @@
+.container {
+  max-width: 100%;
+  h2 {
+    font-size: 20px;
+    font-family: Manrope-SemiBold;
+    display: flex;
+    justify-content: space-between;
+    button {
+      background-color: transparent;
+      border: none;
+      img {
+        width: 1.4rem;
+      }
+    }
+  }
+  input {
+    width: 95%;
+    padding: 0.5rem;
+    display: flex;
+    margin: auto;
+    border: none;
+    background-color: #eaefff;
+    color: #587be0;
+    font-family: Manrope;
+    font-size: 16px;
+    border-radius: 6px;
+  }
+  ::placeholder {
+    color: #587be0;
+  }
+  .copy {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    margin: auto;
+    margin-top: 0.5rem;
+    img {
+      width: 6.6rem;
+      padding: 0.6rem 0rem;
+    }
+  }
+  .btn_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.6rem;
+    button {
+      background-color: transparent;
+      border: none;
+      margin: 0rem 0.5rem;
+      img {
+        width: 2.2rem;
+      }
+    }
+  }
+}
